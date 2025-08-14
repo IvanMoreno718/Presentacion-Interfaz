@@ -1,0 +1,66 @@
+body {
+    background-color: #1e1e1e; /* color oscuro para trabajar cómodo */
+    margin: 0; /* quita el margen por defecto del navegador */
+}
+
+
+
+
+.background {
+    width: 280px;
+    height: 400px;
+    margin: 0 auto; /* centra horizontal */
+    background: radial-gradient(ellipse 71.67% 60.81% at 78.16% 24.24%, #9F9CEB 0%, #292682 100%);
+    border-radius: 60px;
+    position: relative;
+    padding-top: 120px; /* aumenta este valor para bajar el rectángulo-fondo */
+    display: flex;
+    justify-content: flex-start; /* empieza desde arriba */
+    align-items: center; /* centra horizontalmente */
+}
+
+.rectangulo-fondo {
+    width: 300px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rectangulo-usuario,
+.rectangulo-password {
+    width: 200px;
+    height: 59px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.rectangulo-usuario p,
+.rectangulo-password p {
+    margin: 0;
+}
+
+.boton-ingresar {
+    width: 200px;                /* ancho del botón */
+    height: 50px;                /* alto del botón */
+    background-color: #354edb;   /* color de fondo */
+    color: #fff;                 /* color del texto */
+    border: none;                /* quita el borde por defecto */
+    border-radius: 8px;          /* esquinas redondeadas */
+    font-size: 16px;             /* tamaño de la letra */
+    font-weight: bold;            /* negrita */
+    cursor: pointer;             /* cambia el cursor al pasar el mouse */
+    transition: all 0.3s ease;   /* animación suave para hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
