@@ -1,33 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* LOGIN */
 .login-body {
-    background-color: #1e1e1e;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .background {
-    background: radial-gradient(ellipse at center, #9F9CEB 0%, #292682 100%);
-    border-radius: 60px;
-    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at top right, #6a5acd, #292682);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Caja blanca */
 .rectangulo-caja {
-    width: 300px;
+    width: 320px;
     background: white;
-    border-radius: 30px;
-    padding: 30px 20px;
+    border-radius: 20px;
+    padding: 30px 25px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
+/* Inputs */
 .rectangulo-usuario,
 .rectangulo-password {
     height: 50px;
@@ -37,16 +44,34 @@ body {
     align-items: center;
     padding: 0 15px;
     font-size: 14px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
 
+.rectangulo-usuario:hover,
+.rectangulo-password:hover {
+    border-color: #a29bfe;
+    box-shadow: 0 0 5px rgba(162, 155, 254, 0.5);
+}
+
+/* Botón */
 .boton-ingresar {
     height: 50px;
-    background-color: #354edb;
+    background: linear-gradient(90deg, #354edb, #5f78ff);
     color: #fff;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-ingresar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(53, 78, 219, 0.4);
 }
 
 .boton-ingresar button {
@@ -56,8 +81,8 @@ body {
 .boton-ingresar a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
+
 
 /* MAIN */
 .main-body {
