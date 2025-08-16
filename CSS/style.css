@@ -124,3 +124,37 @@ body {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     cursor: pointer;
 }
+
+/* Ajustes específicos para la tabla de productos */
+.tabla-container {
+    padding: 20px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+background: white;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+padding: 12px 15px;
+text-align: center;
+}
+
+th {
+background-color: #354edb;
+color: white;
+font-weight: 600;
+}
+
+tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+tr:hover {
+background-color: #eef2ff;
+transition: 0.2s ease-in-out;
+}
